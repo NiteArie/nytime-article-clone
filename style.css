@@ -71,9 +71,6 @@ body {
 
 /* Main  */
 
-.main {
-    border: 1px solid black;
-}
 
 .main__article {
     max-width: 1200px;
@@ -160,6 +157,44 @@ body {
     color: hsl(220, 50%, 50%);
 }
 
+.main__article__content .content__footer {
+    font-size: 14px;
+    color: hsl(200, 10%, 50%);
+}
+
+.main__article__content .content__footer_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content__footer_menu .content__footer_menu__button {
+    padding: 10px 50px;
+    background-color: rgb(86, 123, 149);
+    border: 1px solid rgb(86, 123, 149);
+    border-radius: 3px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+
+.content__footer_menu__options img {
+    width: 30px;
+    margin-left: 10px;
+    padding: 7px;
+    border-radius: 100%;
+    background-color: hsl(210, 50%, 90%);
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.content__footer_menu__options img:hover {
+    background-color: white;
+    border: 1px solid hsl(210, 30%, 90%);
+}
+
 .main__article__content .bold {
     font-weight: 700;
 }
@@ -241,4 +276,169 @@ body {
 .main__article__content__video span {
     color: hsl(210, 30%, 60%);
     font-size: 14px;
+}
+
+/* Recommendation */
+
+.main__recommend {
+    display: flex;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.main__recommend__recommend {
+    flex: 3;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-top: 1px solid hsl(200, 10%, 10%);
+}
+
+.main__recommend__recommend__newsletters {
+    padding-bottom: 25px;
+    border-bottom: 1px solid black;
+}
+
+.main__recommend__recommend__newsletters .header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.main__recommend__recommend__newsletters .header .title {
+    font-weight: 700;
+}
+
+.main__recommend__recommend__newsletters .header .sub-title {
+    color: hsl(210, 10%, 50%);
+    font-size: 14px;
+}
+
+.main__recommend__recommend__newsletters .content {
+    display: flex;
+}
+
+.main__recommend__recommend__newsletters .content .newsletter {
+    flex: 1;
+}
+
+.newsletter {
+    position: relative;
+    border: 1px solid hsl(210, 10%, 80%);
+    margin-right: 10px;
+    padding: 15px;
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+
+
+.newsletter img {
+    width: 80px;
+}
+
+.newsletter span {
+    display: block;
+    color: hsl(210, 10%, 50%);
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.newsletter h4 {
+    font-weight: 700;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.newsletter p {
+    line-height: 1.25;
+    margin: 5px 0;
+}
+
+.newsletter a {
+    text-decoration: none;
+    position: absolute;
+    bottom: 10px;   
+    color: hsl(210, 50%, 50%);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.newsletter .add {
+    position: absolute;
+    width: 40px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 100%;
+    top: 15px;
+    right: 15px;
+}
+
+/* More in Astronomy and Space */
+
+.main__recommend__recommend__more .header {
+    margin: 20px 0;
+}
+
+.main__recommend__recommend__more .header .title {
+    font-weight: 700;
+}
+
+.main__recommend__recommend__more .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.astro__post {
+    flex-basis: 300px;
+}
+
+.astro__post img {
+    width: 300px;
+}
+
+.astro__post figcaption {
+    font-size: 12px;
+    color: hsl(200, 10%, 50%);
+    text-align: right;
+    margin: 5px 0;
+}
+
+.astro__post h2 {
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.astro__post time {
+    font-size: 14px;
+    color: hsl(200, 10%, 50%);
+}
+
+/* Most Popular Article */
+
+.main__recommend__popular {
+    flex: 1;
+    border-top: 1px solid hsl(200, 10%, 10%);
+}
+
+.main__recommend__popular .header {
+    margin: 20px 0;
+}
+
+.main__recommend__popular .header span {
+    font-weight: bold;
+}
+
+.main__recommend__popular .content div {
+    padding: 15px 0;
+    border-top: 1px solid hsl(200, 30%, 80%);
+}
+
+.main__recommend__popular .content div p {
+    line-height: 1.25;
+    cursor: pointer;
+}
+
+.main__recommend__popular .content div p:hover {
+    color: hsl(200, 10%, 40%);
 }

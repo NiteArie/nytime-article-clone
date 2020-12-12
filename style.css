@@ -34,6 +34,10 @@ body {
     cursor: pointer;
 }
 
+.header__nav__menu__img.hidden {
+    display: none;
+}
+
 .header__nav__menu__title {
     font-weight: 700;
     text-decoration: none;
@@ -68,6 +72,20 @@ body {
     background-color: rgb(50, 104, 145);
 }
 
+@media only screen and (max-width: 1024px) {
+    .header__nav__menu__title {
+        display: none;
+    }
+    .header__nav__menu__img:nth-child(2) {
+        display: none;
+    }
+    .header__nav__buttons__button {
+        display: none;
+    }
+    .header__nav__menu__img.hidden {
+        display: block;
+    }
+}
 
 /* Main  */
 
@@ -278,6 +296,15 @@ body {
     font-size: 14px;
 }
 
+@media only screen and (max-width: 1024px) {
+    .main {
+        padding: 10px;
+    }
+    .main__article__figure__overlay {
+        display: none;
+    }
+}
+
 /* Recommendation */
 
 .main__recommend {
@@ -372,6 +399,27 @@ body {
     right: 15px;
 }
 
+@media only screen and (max-width: 1300px) {
+
+    .main__recommend__popular {
+    }
+
+    .main__recommend__recommend__newsletters .content {
+        display: block;
+    }
+    .main__recommend__recommend__newsletters .content .newsletter {
+        margin-bottom: 10px;
+        display: block;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .main__recommend__popular {
+        display: none;
+    }
+}
+
 /* More in Astronomy and Space */
 
 .main__recommend__recommend__more .header {
@@ -412,6 +460,15 @@ body {
 .astro__post time {
     font-size: 14px;
     color: hsl(200, 10%, 50%);
+}
+
+@media only screen and (max-width: 1200px) {
+    .main__recommend__recommend__more .content {
+        grid-template-columns: 1fr 1fr;
+    }
+    .astro__post img {
+        width: 100%;
+    }
 }
 
 /* Most Popular Article */
@@ -538,4 +595,30 @@ body {
 
 .footer__about .link:hover {
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 1200px) {
+    .footer {
+        padding: 10px;
+    }
+    .footer__container__sections {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__container__sections__section {
+        border-top: 1px solid hsl(200, 10%, 80%);
+        padding-left: 0;
+    }
+
+    .footer__container__sections__section h4 {
+        cursor: pointer;
+    }
+
+    .footer__container__sections__section.border {
+        border-left: 0;
+    }
+
+    .footer__container__sections__section__content {
+        display: none;
+    }
 }

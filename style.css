@@ -442,3 +442,100 @@ body {
 .main__recommend__popular .content div p:hover {
     color: hsl(200, 10%, 40%);
 }
+
+/* Footer */
+
+.footer {
+    margin-top: 30px;
+
+}
+
+.footer__container {
+    max-width: 1200px;
+    margin: 20px auto;
+    margin-bottom: 10px;
+}
+
+.footer__container hr {
+    border: 2px solid hsl(200, 10%, 90%);
+}
+
+.footer__container__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__container__header .logo {
+    width: 200px;
+}
+
+.footer__container__header a {
+    text-decoration: none;
+    font-size: 12px;
+    color: hsl(210, 10%, 40%);
+    cursor: pointer;
+}
+
+.footer__container__sections {
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding-bottom: 10px;
+    border-bottom: 1px solid hsl(210, 10%, 80%);
+}
+
+.footer__container__sections__section {
+    padding: 10px;
+}
+
+.footer__container__sections__section.border {
+    border-left: 1px solid hsl(210, 10%, 80%);
+}
+
+.footer__container__sections__section h4 {
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.footer__container__sections__section__content.border {
+    border-bottom: 1px solid hsl(200, 10%, 80%);
+}
+
+.footer__container__sections__section__content a {
+    display: block;
+    margin: 10px 0;
+    font-size: 13px;
+    color: hsl(210, 10%, 10%);
+    text-decoration: none;
+}
+
+.footer__container__sections__section__content.small a {
+    font-size: 12px;
+}
+
+.footer__container__sections__section__content a.bold {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+.footer__container__sections__section__content a:hover {
+    text-decoration: underline;
+}
+
+.footer__about {
+    margin-bottom: 40px;
+    text-align: center;
+}
+.footer__about .link {
+    font-size: 12px;
+    text-decoration: none;
+    color: hsl(210, 10%, 50%);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.footer__about .link:hover {
+    text-decoration: underline;
+}
